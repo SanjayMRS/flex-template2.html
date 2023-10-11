@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF 8">
+        <meta name="viewport" content="width:device-width" initial-scale="1.o">
+        <title>flex template-2</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            img{
+                max-width: 100%;
+            }
+            body{
+                margin: 0px;
+            }
+            .fluid{
+                width:100%;
+            }
+            .fluid > div{
+               width:100%;
+            }
+            .row0{
+                width: 90%;
+                display: flex;
+                flex-wrap: nowrap;
+                background-color:black;
+                height:35px;
+            }
+            .row0 > div{
+                width: 50%;
+                text-align: center;
+            }
+            .links5{
+                padding-top:7px;
+                color: white;
+                font-size:smaller;
+                word-spacing: 2px;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              
+            }
+           .row1{
+            background-color: bisque;
+            display:flex;
+            flex-wrap: nowrap;
+            height:90px;
+            width:90%;
+           }
+           .row1 > div {
+            width:100%;
+           }
+           .row1in{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            width:40%;
+           }
+           .row1in > div{
+            align-items: center;
+           }
+           .row1in2{
+            display: flex;
+            flex-wrap: nowrap;
+            column-gap:20px;
+           }
+           .row1in2 > div{
+            text-align: center;
+             margin-top:21px;
+             height:50px;
+             width:90px;
+             padding-top:13px;
+             margin-left:0px;
+           }
+           .column1{
+            background-image: url(https://tse4.mm.bing.net/th?id=OIP.KJuUNL-aWMmZBxNKUiA6DQAAAA&pid=Api&P=0&h=180);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:75px;
+            width:30%;
+            margin-top:8px;
+            margin-right:40px;
+             padding:5px;
+             border: 2px solid;
+           }
+           .home{
+            background-color:green;
+            color: white;
+           }
+           .row2{
+            background-color: grey;
+            display:flex;
+            flex-wrap: nowrap;
+            height: 500px;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            column-gap:30px;
+            background-image:url(https://2.bp.blogspot.com/-qE8HhcdksSU/Un4f0n8BHcI/AAAAAAAABng/0eOFQ4qSFP4/s1600/House-+HD-Wallpapers139111.jpg);
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size:cover;
+           }
+           .row2 > div{
+            background-color:white;
+            height:330px;
+            width:290px;
+            text-align: center;
+           }
+            .row3{
+                background-color:white;
+                display: flex;
+                flex-wrap: nowrap;
+                width:90%;
+                height:600px;
+                justify-content:center;
+                column-gap:20px;
+            }
+            .row3 > div{
+                width:470px;
+            }
+           .row4{
+            background-color:grey;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 90%;
+            height:130px;
+            justify-content: center;
+            align-items: center;
+            padding-bottom:30px;
+           }
+           .row4 >div{
+            background-color: grey;
+            height:100px;
+            width:850px;
+            text-align: center;
+            padding-top:10px;
+           }
+
+
+           .row5{
+            background-color:grey;
+            display:flex;
+            flex-wrap: nowrap;
+            width:90%;
+            height:190px;
+            justify-content: center;
+            column-gap:30px;
+           }
+           .row5 > div{
+            background-color: brown;
+            width:455px;
+            height:160px;
+           }
+           .row5in{
+            display: flex;
+            flex-wrap: nowrap;
+           }
+           .row5in > div{
+            width: 100%;
+           }
+           .plain1{
+             background-image: url(https://2.bp.blogspot.com/-qE8HhcdksSU/Un4f0n8BHcI/AAAAAAAABng/0eOFQ4qSFP4/s1600/House-+HD-Wallpapers139111.jpg);
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size: cover;
+            }
+           .plain2{
+             background-color:darkgoldenrod;
+           }
+           .row5in2{
+            display: flex;
+            flex-wrap: nowrap;
+           }
+           .row5in2 > div{
+            width: 100%;
+           }
+           .plain3{
+            background-image: url(https://cdn.wallpapersafari.com/58/71/Gqfraw.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+           .plainp{
+            margin: 0px;
+            padding:10px;
+            color: white;
+            font-weight: 600;
+           }
+           .plainread{
+            border: 2px solid white;
+            color: white;
+            text-align: center;
+            width:40%;
+            height:25px;
+            font-size: small;
+            padding-top:3px;
+            margin-left:12px;
+           }
+        .row6{
+           background-color: dimgray;
+           display: grid;
+           grid-template-columns:40% 25% 25%;
+           width: 90%;
+           justify-content: center;
+          padding-left:150px;
+          padding-top:40px;
+          height:300px;
+          
+        }
+        .links{
+            color:darkgreen;
+        }
+        .quick{
+            color: aliceblue;
+        }
+        .lorum{
+            color: aliceblue;
+        }
+        .keep{
+            color: aliceblue;
+        }
+        .one{
+            background-image: url(https://www.technocrazed.com/wp-content/uploads/2015/12/Home-Wallpaper-7.jpg);
+            background-position: center;
+            background-size:cover;
+            height:320px;
+        }
+        .one, .two{
+            margin-bottom:10px;
+        }
+        .three, .four, .five{
+            background-color:white;
+            height:130px;
+            width:200px;
+            display: flex;
+            flex-wrap: nowrap;
+            width:460px;
+            column-gap:8px;
+        }
+        .three > div, .four > div, .five > div{
+            background-color:white;
+        }
+        .img{
+            width:20%;
+            background-image: url(https://cdn.wallpapersafari.com/37/82/BI78kU.jpg);
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            width:200px;
+        }
+        .dont, .dont2{
+            margin-top:50px;
+            margin-bottom:30px;
+            font-weight:600;
+            font-size:x-large;
+        }
+        .text{
+            width:80%;
+        }
+        .p{
+            font-weight:900;
+            font-size:x-large;
+            text-align: center;
+            margin-top:15px;
+            height:10px;
+        }
+        .aenean{
+               text-align: center;
+        }
+        .read{
+           justify-content: center;
+            border: 2px solid green;
+            color:green;
+            width:22%;
+            height:30px;
+            margin-left:250px;
+            text-align:center;
+            padding-top:4px;
+
+        }
+        .read1{
+           border:2px green solid;
+           color: green;
+           width:40%;
+           height:25px;
+           text-align: center;
+           padding-top:1px ;
+        }
+        .capsread{
+            background-color:lightgreen;
+            color: azure;
+            height: 55px;
+            padding-top:18px;
+            font-weight:600;
+        }
+        .phase{
+            margin-top:0px;
+            height:4px;
+            font-weight: 600;
+        }
+        .name{
+            padding: 0px;
+          font-size:10px;
+          font-family: Arial, Helvetica, sans-serif;
+          height:5px;
+        }
+        .amet{
+            background-color: aquamarine;
+            height:80px;
+            margin-top: 0px;
+            padding-top:20px;
+            font-weight:600;
+        }
+        .end{
+            background-color:black;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 90%;
+            height:50px;
+        }
+        .end > div{
+            color: white;
+            margin-left:210px;
+            width:350px;
+            padding-top:14px;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="fluid">
+    <div class="row0">
+        <div class="links5">LINK 1 | LINK 2 | LINK3 | LINK 4 | LINK 5</div>
+        <div class="links5">+00(123) 456 7890 | INFO@DOMAIN.COM</div>
+    </div>
+    <div class="row1">
+        <div class="row1in">
+        <div class="column1"></div>
+        </div>
+        <div>
+        <div class="row1in2">
+            <div class="home">HOME</div>
+            <div>PAGES</div>
+            <div>DROPDOWN</div>
+            <div>LINK TEXT</div>
+            <div>LINK TEXT</div>
+        </div>
+        </div>
+    </div>
+    <div class="row2">
+        <div class="section1">
+            <p class="amet">
+                    QUISQUE VEHICULA<BR> URNA AMET
+            </p>
+            <p>
+                ullacorper,mauri sit amit<br><br>
+                sed eget ultricius sem<br><br>
+                prion quis luctus egestus<br><br>
+                adipis cing ornare<br><br>
+                donec luctus canvallis rhoncus
+            </p>
+            <p class="capsread">
+                READ MORE >
+            </p>
+        </div>
+        <div>
+            <p class="amet">
+                QUISQUE VEHICULA<BR> URNA AMET
+        </p>
+        <p>
+            ullacorper,mauri sit amit<br><br>
+            sed eget ultricius sem<br><br>
+            prion quis luctus egestus<br><br>
+            adipis cing ornare<br><br>
+            donec luctus canvallis rhoncus
+        </p>
+        <p class="capsread">
+            READ MORE >
+        </p>
+        </div>
+        <div>
+            <p class="amet">
+                QUISQUE VEHICULA<BR> URNA AMET
+        </p>
+        <p>
+            ullacorper,mauri sit amit<br><br>
+            sed eget ultricius sem<br><br>
+            prion quis luctus egestus<br><br>
+            adipis cing ornare<br><br>
+            donec luctus canvallis rhoncus
+        </p>
+        <p class="capsread">
+            READ MORE >
+        </p>
+        </div>
+    </div>
+    <div class="row3">  
+        <div class="rowchild">
+             <p class="dont">MAECENAS LIBERO NUNC EU ERAT</p>
+            <div class="one"></div>
+            <div class="two">
+                <p class="p">
+                    URNA SIT AMET PULVINER<br>
+                </p>
+                <p class="aenean">
+                    Aenean semper ellumentum tellus,ut placerat leo. Quisque<br>
+                    vehicula urna,sit amit....
+                </p>
+                <p class="read">Read More >></p>
+            </div>
+        </div>
+        <div class="main"> 
+            <p class="dont2">ETIAM EROS NULLA POSTURE</p>
+            <div class="three">
+                <diV class="img"></diV>
+                <diV class="text">
+                    <p class="phase">PHASELLUS MASSA FEELS IN<br>
+                        <p class="name"> By <span style="color:darkgreen">A Name</style></span> Friday, April 6,20245</p>
+                        <p>
+                            Aenean semper ellumentum tellus,ut placerat leo. Quisque
+                            vehicula urna,sit amit....
+                        </p>
+                        <p class="read1">Read More >></p>
+                    </p>
+                </diV>
+            </div><hr>
+            <div class="four">
+                <diV class="img"></diV>
+                <diV class="text">
+                    <p class="phase">PHASELLUS MASSA FEELS IN<br>
+                        <p class="name"> By <span style="color:darkgreen">A Name</style></span> Friday, April 6,20245</p>
+                        <p>
+                            Aenean semper ellumentum tellus,ut placerat leo. Quisque
+                            vehicula urna,sit amit....
+                        </p>
+                        <p class="read1">Read More >></p>
+                    </p>
+                </diV>
+            </div><hr>
+            <div class="five">
+                <diV class="img"></diV>
+                <diV class="text">
+                    <p class="phase">PHASELLUS MASSA FEELS IN<br>
+                        <p class="name"> By <span style="color:darkgreen">A Name</style></span> Friday, April 6,20245</p>
+                        <p>
+                            Aenean semper ellumentum tellus,ut placerat leo. Quisque
+                            vehicula urna,sit amit....
+                        </p>
+                        <p class="read1">Read More >></p>
+                    </p>
+                </diV>
+            </div>
+        </div>
+    </div>
+    <div class="row4">
+        <div>
+          <h4>DONEC FACILISIS VOLUTPAT LIGULA NEC EGESTUS.</h4>
+          <p>Integer varius enium id augue faucibus mattis.Pellentesque scelerisque nibh eu mi convallis,ac feugiat nulla tincidunt.</p>
+        </div>
+    </div>
+    <div class="row5">
+        <div class="row5in">
+            <div class="plain1"></div>
+            <div  class="plain2">
+                <p class="plainp">
+                        QUISQUE VEHICULA <br>
+                        URNUS SIT AMET<br>
+                        PULVINAR DAPIBUS
+                </p>
+                <p class="plainread">READ MORE</p>
+            </div>
+        </div>
+        <div class="row5in2">
+            <div class="plain3"></div>
+            <div  class="plain4">
+                <p class="plainp">
+                    INTEGER VARIUS <br>
+                    ENIUM ID AUGUE<br>
+                    FAUCIBUS MATTIS
+            </p>
+            <p class="plainread">READ MORE</p>
+            </div>
+        </div>
+    </div>
+    <div class="row6">
+        <div class="lorum">
+            <div class="lorum">LORUM IPSUM DOLAR</div><br>
+            <p>
+               <div>Donec sed ultrices eros.Nulla facilisi.
+                Aliquam purusnurna,porta non faucibus nec,luctus vitae ante.Suspendiese potenti.Morbi sollicitudiun
+                viverra urna,vel auctor purus volutpat vel.</div><br><br>
+                <div>street Name & Number,Town.Postcode/Zip</div> <br>
+                <div>+00(123)546 6789</div> <br>
+               <div>info@domain.com</div>
+            </p>
+        </div>
+        <div class="links">
+            <div class="quick">QUICK LINKS</div><br><br>
+            Home<br><br>
+            Blog<br><br>
+            Gallery<br><br>
+            Portfolio<br><br>
+            Contact Us 
+
+        </div>
+        <div>
+            <div class="keep">KEEP IN TOUCH</div><br>
+           <div class="email"><input type="email" name=" mail" placeholder="Email" ></div> <br>
+            <div class="sumbit"><input type="button" value="Sumbit"></div>
+        </div>
+    </div>
+    <div class="end">
+        <div>Copyright © 2015 - All Rights Reserved </div>
+    </div>
+</div>
+    </body>
+</html>
